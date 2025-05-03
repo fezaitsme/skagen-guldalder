@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En koncert i Skagen Kirke</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .music-note {
+            background-color: #f1f8ff;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        .artist-info {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        /* Audio player styling */
+        .audio-container {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .audio-player {
+            width: 100%;
+            max-width: 600px;
+            margin: 10px auto;
+        }
+
+        .audio-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        /* Image styling - keeps images within container boundaries */
+        .image-container {
+            width: 100%;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            /* Never exceed container width */
+            height: auto;
+            /* Maintain aspect ratio */
+            display: block;
+            /* Remove bottom space */
+            margin: 0 auto;
+            /* Center the image */
+            border-radius: 5px;
+            /* Optional: rounded corners */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            /* Optional: shadow */
+        }
+
+        .image-caption {
+            font-style: italic;
+            color: #666;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+
+        /* For images that should float beside text */
+        .float-right {
+            float: right;
+            margin: 0 0 15px 15px;
+            max-width: 40%;
+        }
+
+        .float-left {
+            float: left;
+            margin: 0 15px 15px 0;
+            max-width: 40%;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .section {
+                padding: 15px;
+            }
+
+            /* Make floating images full width on mobile */
+            .float-right,
+            .float-left {
+                float: none;
+                max-width: 100%;
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>En koncert i Skagen Kirke</h1>
+
+    <div class="section">
+        <h2>Michael Ancher og P.S.Krøyer</h2>
+        <p>Har begge i 1908 malet et lille maleri med en scene fra en koncert i Skagen
+            Kirke. Komponisten Hakon Børresen sidder ved Demant orglet. Foran ses den norske operasangerinde Ellen
+            Gulbranson. Da billedet senere bliver bearbejdet er sangeren for længst rejst og begge malere bruger deres
+            lokale veninde Fru Henny Brodersen som model, da hun har en slående lighed med operasangerinden.</p>
+
+        <div class="image-container">
+            <img src="resources/images/skagenskoncert-maleri.png" alt="Koncert i Skagen Kirke maleri">
+            <p class="image-caption">Maleri af koncerten i Skagen Kirke, 1908</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Orglet i Skagen Kirke</h2>
+        <p>Skagen Kirkes nuværende orgel er bygget af det danske orgelbyggerfirma Marcussen & Søn i 1962. Orgelfacaden
+            er tegnet af arkitekt Christen Justesen senior. Pibernes symmetriske opdeling i felter i facaden er nøje
+            afstemt efter arkitekterne Bindesbøll og Plesners symmetriske opbygning af Skagen kirke over rummets
+            midterakse. Orglet er sidst blevet renoveret med nyt bælgeværk i 2010 og udvidet med 4 nye stemmer, så det i
+            dag har 31 stemmer fordelt på 3 manualer og pedal.</p>
+        <div class="image-container">
+            <img src="resources/images/skagenskirke-orgel.png" alt="Orglet i Skagen Kirke">
+            <p class="image-caption">Orglet i Skagen Kirke</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Musikken: Erindring. "Så hastigt svinder dagen"</h2>
+        <p>Forfatteren Holger Drachmann (1846-1908), som havde sit hjem i Skagen, skrev i 1904 digtet "Erindring". Et
+            digt om tiderne, der var engang, da kunstnerkolonien blomstrede, og ånden og kreativiteten i Skagen var
+            stærk. "Der var et andet Skagen, et bedre om man vil". Flere satte melodi til digtet, men det blev Roland
+            Bildes melodi folk bruger i dag. Roland Bilde (1906-1981) var organist i Skagen Kirke fra 1931- 1938 og
+            skrev melodien i 1938 i anledning af indvielsen af "Fortidsminderne"- nu Kystmuseerne. Sangen er stadig
+            populær i Skagen og er ofte ønsket som udgangsmusik til bisættelser. Her høres et arrangement over melodien
+            skrevet og spillet af Rikke M.S. Kursch. (Organist ved Skagen Kirke 2015-).</p>
+
+        <div class="audio-container">
+            <p class="audio-title">Lyt til: Erindring. "Så hastigt svinder dagen"</p>
+            <audio controls class="audio-player">
+                <source src="resources/music/11-Erindring.wav" type="audio/wav">
+                Din browser understøtter ikke audio elementet.
+            </audio>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <h2>Demant orglet i Skagen Kirke 1841-1910. Nu i Skagen Sognehus</h2>
+        <div class="image-container">
+            <img src="resources/images/skagenkirke-gammel-orgel-facade.png"
+                alt="Facaden på Demant orglet i Skagen Kirke Sognehus">
+            <p class="image-caption">Facaden på Demant orglet i Skagen Kirke Sognehus</p>
+        </div>
+        <div class="image-container">
+            <img src="resources/images/skagenkirke-gammel-orgel-keyboard.png"
+                alt="Manualet på Demant orglet i Skagen Kirke Sognehus">
+            <p class="image-caption">Manualet på Demant orglet i Skagen Kirke Sognehus</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2>Historien om Demant orglet i Sognehuset</h2>
+        <p>Skagen Kirke stod færdig i 1840. Kirken afløste Sankt Laurentii kirke (Den Tilsandede Kirke), som blev lukket
+            i 1795 på grund af sandflugten. Kirken manglede ved indvielsen et orgel til at ledsage salmesangen. Dronning
+            Caroline Amalie skænkede derfor de fattige skagboer sit private orgel, som få år forinden kom til hendes
+            sommerresidens Sorgenfri Slot. Det historiske P.U.F. Demant orgel stod i Skagen Kirke fra ca.1841 til 1910.
+            Her akkompagnerede det skagboernes salmesang og lagde toner til koncerter, indtil kirken i 1910 blev
+            ombygget og udvidet. Under ombygningen lånte menigheden Missionshuset Emaus til gudstjenester, hvorfor
+            orglet blev flyttet over gaden til Missionshusets pulpitur. Den ombyggede og udvidede Skagen Kirke fik et
+            nyt orgel, bygget af Starup, så Demant orglet blev stående i Missionshuset og har siden ledsaget salmesang
+            til andagter, møder og ikke mindst den årlige juletræsfest, som mange ældre skagboer stadig forbinder lyden
+            af orglet med. Da Missionhuset blev til Skagen Kirkes sognehus i 2007, blev orglet restaureret af
+            orgelbygger Husted og fremstår derfor flot og velspillende i dag.</p>
+    </div>
+
+    <div class="section">
+        <h2>Hakon Børresen (1876-1954)</h2>
+        <p>Er opvokset i København. Han ønskede at være komponist og blev oplært af Johan Svendsen, der var leder af
+            det kongelige kapel. Hakon skrev her sin første symfoni og fik med den stor anerkendelse også udenfor
+            landets grænser. Men han forblev gennem sit komponistvirke i den samme romantiske stil og blev med årene
+            betragtet som konservativ og gammeldags. Børresen var fascineret af havet, og han delte sit liv mellem
+            en lejlighed i Københavns centrum og længere ophold i Skagen. I 1910 tegnede Ulrich Plesner et hus, som
+            Børresen lod opføre og kaldte "Kaddara". Hakon indgik i Kunstnerkolonien, og om sin kærlighed til Skagen
+            skriver han:</p>
+
+        <blockquote>
+            "Her er fred og ro, dejligt om sommeren, men også storartet om vinteren. Skagen ligger på den nordligste
+            spids. Havet er det samme som for 50 år siden – den vældige horisont og det store luftmaleri. Jeg kan
+            ikke se andet end, at der er stor forbindelse mellem malerkunst og musik. Krøyer arbejdede således gerne
+            til musik, og jeg har ofte spillet i hans atelier, når han malede".
+        </blockquote>
+
+        <p>I dag betyder det ikke så meget, at Børresen var konservativ. Hans musik står smukt og skønt i den
+            romantiske stil med svulmende melodier og skønne fortællinger.</p>
+    </div>
+
+    <div class="section">
+        <h2>Musikken: "Sov nu, mit Hjerte"</h2>
+        <p>Også kaldet "Vuggevise" er et bud på et værk, der kan have været opført ved koncerten i 1908, som begge
+            malere har foreviget. Værket er skrevet af Hakon Børresen, og akkompagnementet passer fint til orglet.
+        </p>
+        <p>Charlotte Hjørringgaard Larsen synger, og organist Rikke M.S. Kursch akkompagnerer på det lille Demant
+            orgel.</p>
+        <div class="audio-container">
+            <p class="audio-title">Lyt til: "Sov nu, mit Hjerte"</p>
+            <audio controls class="audio-player">
+                <source src="resources/music/03-sov-nu-mit-hjerte.wav" type="audio/wav">
+                Din browser understøtter ikke audio elementet.
+            </audio>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Skagen Guldalder - Sang og Orgel</h2>
+        <p>Optagelserne er en snigpremiere på denne udgivelse som udkommer ultimo Maj 2025</p>
+        <div class="image-container">
+            <img src="resources/images/cd-forside.png"
+                alt="Cover a Skagen Guldalder - Sang og Orgel">
+            <p class="image-caption">Cover af Skagen Guldalder - Sang og Orgel</p>
+        </div>
+    </div>
+</body>
+
+</html>
